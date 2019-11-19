@@ -7,5 +7,6 @@ class Guest(models.Model):
   name = models.CharField(max_length=20, null=False)
   last_name = models.CharField(max_length=20, null=False)
   dni = models.CharField(max_length=8, null=False)
+  attended = models.BooleanField(default=False)
   def __str__(self):
     return '{}, {}, {}'.format(self.name, self.last_name, self.dni)
