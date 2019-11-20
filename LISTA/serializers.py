@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from LISTA.models import Guest
+from LISTA.models import People
 
-class GuestSerializer(serializers.ModelSerializer):
+class PeopleSerializer(serializers.ModelSerializer):
   class Meta:
-    model = Guest
+    model = People
     fields = '__all__'

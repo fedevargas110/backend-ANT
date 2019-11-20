@@ -2,8 +2,8 @@ from django.db import models
 
 # Create your models here.
 
-class Guest(models.Model):
-  id_guest = models.AutoField(primary_key=True)
+class People(models.Model):
+  id_people = models.AutoField(primary_key=True)
   name = models.CharField(max_length=20, null=False)
   last_name = models.CharField(max_length=20, null=False)
   dni = models.CharField(max_length=8, null=False)

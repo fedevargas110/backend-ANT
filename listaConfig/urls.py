@@ -5,7 +5,7 @@ from rest_framework.routers import SimpleRouter
 from LISTA.views import *
 
 router = SimpleRouter()
-router.register(r'guest', GuestViewSet)
+router.register(r'people', PeopleViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
